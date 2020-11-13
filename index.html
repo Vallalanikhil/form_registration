@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="connect.php" method="post">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <div id="ui">
+                    <form class="form-group">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label>First Name:</label>
+                                <input type="text" name="fname" class="form-control" placeholder="Enter your First Name...">
+                            </div>  
+                            <div class="col-lg-6">
+                                <label>Last Name:</label>
+                                <input type="text" name="lname" class="form-control"placeholder="Enter Your Last Name...">
+                            </div>  
+
+                        </div>
+                        <label>E-mail:</label>
+                        <input type="email" name="email" class="form-control"placeholder="Enter Your E-mail...">
+
+                        <label>Phone Number</label>
+                        <input type="phonenumber" name="phonenumber" class="form-control"placeholder="Enter Your phone number...">
+
+                        <div class="form-group">
+                            <div class="dates">
+                                <label for="dob">Date of Birth:</label>
+                                <input type="text" name="event_date" id="usrl" class="form-control"placeholder="YYYY-MM-DD" autocomplete="off">
+
+                            </div>
+                            <label>Age:</label>
+                            <input type="age no" name="number" class="form-control" placeholder="Enter Your Age..">
+                            <br>
+                            <input type="submit" name="submit" value="submit" class="btn btn-primary btn-block btn-lg" >
+                        </div>
+                        <div class="g-recaptcha brochure__form__captcha" data-sitekey="YOUR SITE KEY"></div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
